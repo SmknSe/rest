@@ -1,7 +1,9 @@
 package model;
 
+import java.util.UUID;
+
 public record UserDTO(
-        String id,
+        UUID id,
         String name
 ) {
 }
