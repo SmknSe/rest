@@ -1,10 +1,7 @@
 package model;
 
-public record UserDTO(String id,
-                      String username,
-                      String password
+public record UserDTO(
+        String id,
+        String name
 ) {
-    public UserDTO(String id, String username) {
-        this(id, username, null);
-    }
 }
