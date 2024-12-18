@@ -1,11 +1,13 @@
 package api;
 
+import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
 import model.ItemDTO;
 
 import java.util.List;
 
+@Headers("Content-Type: application/json")
 public interface ItemServiceApi {
 
     @RequestLine("POST")

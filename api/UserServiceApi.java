@@ -9,10 +9,10 @@ import model.UserDTO;
 import java.util.List;
 import java.util.UUID;
 
+@Headers("Content-Type: application/json")
 public interface UserServiceApi {
 
     @RequestLine("POST")
-    @Headers("Content-Type: application/json")
     UserDTO createOrGetUser(AuthRequestDTO authRequestDTO);
 
     @RequestLine("GET")
