@@ -1,5 +1,6 @@
 package api;
 
+import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
 import model.AuthRequestDTO;
@@ -11,6 +12,7 @@ import java.util.UUID;
 public interface UserServiceApi {
 
     @RequestLine("POST")
+    @Headers("Content-Type: application/json")
     UserDTO createOrGetUser(AuthRequestDTO authRequestDTO);
 
     @RequestLine("GET")
