@@ -1,9 +1,10 @@
 package model;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 public record OrderDTO(
-        String id,
+        UUID id,
         BigDecimal total
 ) {
 }
